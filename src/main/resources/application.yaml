@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kurs
+    username: kurs
+    password: kurs
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show_sql: true
+    hibernate.ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        jdbc.lob.non_contextual_creation: true
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+# debug: true
+
